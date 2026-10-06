@@ -22,27 +22,33 @@
 
 module memory#(
     parameter WIDTH = 8,
-    parameter SIZE = 32,
-    parameter ADDR_WIDTH = $clog2(SIZE)
+    parameter SIZE = 32
     )(
     input [WIDTH-1:0] write_data,
-    input [ADDR_WIDTH-1:0] address,
+    input [($clog2(SIZE))-1:0] address,
     input read_enable,
     input write_enable,
     input rst,
     input clk,
-    output reg [WIDTH-1:0] read_data
+    output reg [WIDTH-1:0] read_data,
+    output reg mem_ready
     );
 
     reg [SIZE-1:0] memory [WIDTH-1:0];
     integer i;
     
+    initial begin
+        mem_ready = 1'b1;
+    end
+    
     always@(posedge clk, posedge rst) begin
         // Clear Ram
         if (rst) begin
+            mem_ready = 1'b0;
             for (i = 0; i < SIZE-1; i = i + 1) begin
-                memory[i] = 0;
+                memory[i] = {WIDTH{1'b0}};
             end
+            mem_ready = 1'b1;
         end
         else if (read_enable) begin
             read_data = memory[address];
