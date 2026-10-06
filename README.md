@@ -10,6 +10,6 @@
 
 <a href="https://github.com/Jcavlovic/UTSA-EE-5113-VLSI-Design/tree/master/assignments" style="font-size: 16px;">Assignments</a>
 
-<a href="https://github.com/Jcavlovic/UTSA-EE-5113-VLSI-Design/tree/master/labs" style="font-size: 16px;">Labs</a>
 
-<a href="" style="font-size: 16px;">Final Project</a>
+
+<a href="https://github.com/Jcavlovic/UTSA-EE-5113-VLSI-Design" style="font-size: 16px;">Final Project</a>
