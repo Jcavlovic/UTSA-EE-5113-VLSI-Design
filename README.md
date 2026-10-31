@@ -12,4 +12,4 @@
 
 
 
-<a href="https://github.com/Jcavlovic/UTSA-EE-5113-VLSI-Design" style="font-size: 16px;">Final Project</a>
+<a href="https://github.com/Jcavlovic/UTSA-EE-5113-VLSI-Design/tree/master/final_project" style="font-size: 16px;">Final Project</a>
