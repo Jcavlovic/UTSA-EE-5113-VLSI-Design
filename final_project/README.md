@@ -1,5 +1,5 @@
-# EE 5103 / EE 4953 — Final Project
-### Circuit Analysis Library in C++
+# EE 5113 VLSI Design — Final Project
+### NEXYSA7 ML MNIST Dataset 
 **Students:** Jordan Cavlovic, Darryll Smith
 
 
